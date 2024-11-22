@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.app.jobportal.R;
-
+//for confirm account
 public class ConfirmAccountActivity extends AppCompatActivity {
 
     @Override
