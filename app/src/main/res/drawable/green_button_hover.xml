@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State when the button is hovered over -->
+    <item android:state_hovered="true" android:drawable="@drawable/green_hover_shape" />
+
+    <!-- State when the button is pressed -->
+    <item android:state_pressed="true" android:drawable="@drawable/green_hover_shape" />
+
+    <!-- Default state -->
+    <item android:drawable="@drawable/defaultshape_bg" />
+</selector>

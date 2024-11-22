@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.jobportal">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JobPortal">
+        <activity android:name=".Register.RegisterActivity"></activity>
+        <activity android:name=".JobFilterActivity"></activity>
+        <activity android:name=".SearchJobActivity" />
+        <activity android:name=".ConfirmationDataActivity" />
+        <activity android:name=".UploadCvActivity" />
+        <activity android:name=".ApplyActivity" />
+        <activity android:name=".JobDescriptionActivity" />
+        <activity android:name=".Register.AccountSetActivity" />
+        <activity android:name=".Login.ConfirmAccountActivity" />
+        <activity android:name=".Register.SelectProfessionActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity android:name=".splash.SplashInf3Activity" />
+        <activity android:name=".splash.SplashInf2Activity" />
+        <activity android:name=".splash.SplashInf1Activity" />
+        <activity android:name=".splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

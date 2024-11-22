@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JobFilterActivity"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="25dp">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Title and Reset Button -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:text="Set Filters"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="@font/dm_sansbold"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/resetButton"
+                android:text="Reset"
+                android:textColor="@color/teal_200"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <!-- Job Category Dropdown -->
+        <TextView
+            android:text="Job Category"
+            android:fontFamily="@font/dm_sansbold"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/jobCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <!-- Sub Category Dropdown -->
+        <TextView
+            android:text="Sub Category"
+            android:fontFamily="@font/dm_sansbold"
+            android:layout_marginTop="16dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/subCategorySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <!-- Location Dropdown -->
+        <TextView
+            android:text="Location"
+            android:textSize="15sp"
+            android:fontFamily="@font/dm_sansbold"
+            android:textColor="@color/black"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:id="@+id/locationSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown" />
+
+        <!-- Salary Range -->
+        <TextView
+            android:text="Salary"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <EditText
+                android:id="@+id/minSalary"
+                android:hint="Min Salary"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" />
+
+            <EditText
+                android:id="@+id/maxSalary"
+                android:hint="Max Salary"
+                android:inputType="number"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+
+        <!-- Job Type -->
+        <TextView
+            android:text="Job Type"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/remoteButton"
+                android:text="Fulltime"
+                android:textColor="@color/black"
+                android:background="@drawable/button_hover"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/contractButton"
+                android:text="Parttime"
+                android:layout_width="0dp"
+                android:textColor="@color/black"
+                android:background="@drawable/button_hover"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/freelanceButton"
+                android:text="Remote"
+                android:textColor="@color/black"
+                android:background="@drawable/button_hover"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/fullTimeButton"
+                android:text="Immidiate"
+                android:textColor="@color/black"
+                android:layout_width="0dp"
+                android:background="@drawable/button_hover"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/partTimeButton"
+                android:text="Freelance"
+                android:textColor="@color/black"
+                android:background="@drawable/button_hover"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
