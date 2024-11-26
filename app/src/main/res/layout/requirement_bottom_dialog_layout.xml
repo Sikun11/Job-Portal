@@ -16,29 +16,31 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="About this role"
-            android:textSize="15sp"
+            android:textSize="20sp"
             android:fontFamily="@font/dm_sansbold"
             android:textColor="@color/black"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="10dp"
+            android:paddingTop="15dp"
             android:text="After clearing all the interview rounds, you get an offer letter. Once you accept it you will get the joining letter. This confirms your job 90 percent of the time"
             android:textColor="@color/black"
-            android:textSize="12sp"
+            android:textSize="14sp"
             android:fontFamily="@font/dmsans_regular"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_marginTop="15dp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="What You Will Do"
             android:textColor="@color/black"
-            android:textSize="15sp"
+            android:textSize="20sp"
+            android:paddingBottom="15dp"
             android:fontFamily="@font/dm_sansbold"
             />
         <LinearLayout
@@ -126,7 +128,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp">
         <Button

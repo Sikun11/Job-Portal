@@ -13,11 +13,14 @@ import com.app.jobportal.R;
 public class SelectProfessionActivity extends AppCompatActivity {
 
     private Button btn;
+    private String userName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selectprofession);
+
+        userName=getIntent().getStringExtra("username");
 
         init();
         listener();
@@ -30,6 +33,7 @@ public class SelectProfessionActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(SelectProfessionActivity.this, ConfirmAccountActivity.class);
+                intent.putExtra("uname",userName);
                 startActivity(intent);
             }
         });

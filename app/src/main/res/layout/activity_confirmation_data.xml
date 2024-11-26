@@ -49,8 +49,8 @@
                 android:layout_height="wrap_content"
                 android:padding="20dp">
                 <ImageView
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:background="@drawable/profile"/>
             </LinearLayout>
             <LinearLayout
@@ -62,15 +62,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Arya Wijiya"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/dm_sansmedium"/>
+                    android:fontFamily="@font/dm_sansbold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Product Designer"
-                    android:textSize="10sp"
+                    android:textSize="13sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/dmsans_regular"/>
+                    android:fontFamily="@font/dm_sansmedium"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -87,8 +88,8 @@
                 android:layout_height="wrap_content"
                 android:padding="25dp">
                 <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
                     android:background="@drawable/document1"/>
             </LinearLayout>
             <LinearLayout
@@ -100,13 +101,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="JohnClain-CV.pdf"
+                    android:textSize="18sp"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/dm_sansmedium"/>
+                    android:fontFamily="@font/dm_sansbold"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="5.78kb"
-                    android:textSize="10sp"
+                    android:textSize="13sp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/dmsans_regular"/>
             </LinearLayout>
@@ -135,10 +137,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="10dp">
+            android:paddingTop="20dp">
             <ImageView
-                android:layout_width="65dp"
-                android:layout_height="65dp"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
                 android:background="@drawable/roundchecked"/>
         </LinearLayout>
 
@@ -146,7 +148,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:paddingTop="35dp"
+            android:paddingTop="45dp"
             android:orientation="vertical">
             <TextView
                 android:layout_width="match_parent"
@@ -160,8 +162,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textColor="@color/black"
-                android:paddingTop="10dp"
-                android:textSize="13sp"
+                android:paddingTop="20dp"
+                android:textSize="15sp"
                 android:textAlignment="center"
                 android:fontFamily="@font/dmsans_regular"
                 android:text="You have been shortlisted for the said Internship on the basis of percentage criteria you have secured in the jobby"/>
@@ -170,10 +172,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp">
             <Button
+                android:id="@+id/confirmationData_btn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"

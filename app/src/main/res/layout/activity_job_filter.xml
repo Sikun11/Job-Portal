@@ -22,7 +22,7 @@
 
             <TextView
                 android:text="Set Filters"
-                android:textSize="20sp"
+                android:textSize="22sp"
                 android:layout_width="0dp"
                 android:textColor="@color/black"
                 android:gravity="center"
@@ -43,24 +43,33 @@
         <TextView
             android:text="Job Category"
             android:fontFamily="@font/dm_sansbold"
-            android:textSize="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:paddingBottom="10dp"
             android:textColor="@color/black"
             android:layout_marginTop="16dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
+
         <Spinner
             android:id="@+id/jobCategorySpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown" />
+            android:layout_height="60dp"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@color/black" />
+
 
         <!-- Sub Category Dropdown -->
         <TextView
             android:text="Sub Category"
             android:fontFamily="@font/dm_sansbold"
             android:layout_marginTop="16dp"
-            android:textSize="15sp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:paddingBottom="10dp"
             android:textColor="@color/black"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -68,30 +77,41 @@
         <Spinner
             android:id="@+id/subCategorySpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown" />
+            android:layout_height="60dp"
+            android:background="@drawable/sub_spinner_background"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@color/black" />
 
         <!-- Location Dropdown -->
         <TextView
             android:text="Location"
-            android:textSize="15sp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
             android:fontFamily="@font/dm_sansbold"
             android:textColor="@color/black"
             android:layout_marginTop="16dp"
+            android:paddingBottom="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <Spinner
-            android:id="@+id/locationSpinner"
+            android:id="@+id/locationCategorySpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@android:drawable/btn_dropdown" />
+            android:layout_height="60dp"
+            android:background="@drawable/location_spinner_background"
+            android:padding="12dp"
+            android:spinnerMode="dropdown"
+            android:popupBackground="@color/black" />
 
         <!-- Salary Range -->
         <TextView
             android:text="Salary"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/dm_sansbold"
+            android:textColor="@color/black"
+            android:paddingVertical="10dp"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
@@ -99,33 +119,75 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp">
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="10dp">
 
-            <EditText
-                android:id="@+id/minSalary"
-                android:hint="Min Salary"
-                android:inputType="number"
-                android:layout_width="0dp"
-                android:layout_weight="1"
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@android:drawable/editbox_background" />
+                android:layout_weight="1"
+                android:orientation="vertical">
+                <EditText
+                    android:id="@+id/minSalary"
+                    android:hint="$800"
+                    android:fontFamily="@font/dm_sansmedium"
+                    android:textColorHint="#8B000000"
+                    android:inputType="number"
+                    android:padding="20dp"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:background="@android:drawable/editbox_background" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="Min Salary"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/dm_sansmedium"/>
+            </LinearLayout>
 
-            <EditText
-                android:id="@+id/maxSalary"
-                android:hint="Max Salary"
-                android:inputType="number"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_marginStart="8dp"
-                android:layout_height="wrap_content"
-                android:background="@android:drawable/editbox_background" />
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:orientation="vertical">
+               <EditText
+                   android:id="@+id/maxSalary"
+                   android:hint="$2400"
+                   android:fontFamily="@font/dm_sansmedium"
+                   android:textColorHint="#8B000000"
+                   android:inputType="number"
+                   android:textSize="18sp"
+                   android:padding="20dp"
+                   android:textColor="@color/black"
+                   android:layout_width="match_parent"
+                   android:layout_weight="1"
+                   android:layout_marginStart="8dp"
+                   android:layout_height="wrap_content"
+                   android:background="@android:drawable/editbox_background" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Max Salary"
+                   android:layout_marginLeft="10dp"
+                   android:textColor="@color/black"
+                   android:textSize="15sp"
+                   android:fontFamily="@font/dm_sansmedium"/>
+           </LinearLayout>
         </LinearLayout>
 
         <!-- Job Type -->
         <TextView
             android:text="Job Type"
-            android:textStyle="bold"
-            android:layout_marginTop="16dp"
+            android:fontFamily="@font/dm_sansbold"
+            android:textColor="@color/black"
+            android:paddingVertical="15dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
         <LinearLayout
@@ -188,6 +250,25 @@
                 android:layout_weight="1"
                 android:layout_marginStart="8dp"
                 android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+            <Button
+                android:id="@+id/resume_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_corner"
+                android:gravity="center"
+                android:padding="17dp"
+                android:textAllCaps="false"
+                android:text="Apply Filter"
+                android:textSize="20sp" />
         </LinearLayout>
 
 

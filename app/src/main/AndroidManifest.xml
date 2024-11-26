@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.app.jobportal">
 
+    <!-- storage permission here -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +12,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JobPortal">
-        <activity android:name=".Register.RegisterActivity"></activity>
-        <activity android:name=".JobFilterActivity"></activity>
+        <activity android:name=".HomeActivity">
+        </activity>
+        <activity android:name=".Register.RegisterActivity" />
+        <activity android:name=".JobFilterActivity" >
+        </activity>
         <activity android:name=".SearchJobActivity" />
         <activity android:name=".ConfirmationDataActivity" />
         <activity android:name=".UploadCvActivity" />
-        <activity android:name=".ApplyActivity" />
-        <activity android:name=".JobDescriptionActivity" />
+        <activity android:name=".ApplyActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".JobDescriptionActivity">
+        </activity>
         <activity android:name=".Register.AccountSetActivity" />
         <activity android:name=".Login.ConfirmAccountActivity" />
         <activity android:name=".Register.SelectProfessionActivity" />
@@ -24,11 +37,6 @@
         <activity android:name=".splash.SplashInf2Activity" />
         <activity android:name=".splash.SplashInf1Activity" />
         <activity android:name=".splash.SplashActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 

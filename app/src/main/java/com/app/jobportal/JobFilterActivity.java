@@ -11,20 +11,21 @@ import android.widget.Toast;
 
 public class JobFilterActivity extends AppCompatActivity {
 
-    Spinner spinner;
-    String[] jobSet={"item1","item2","item3"};
+    Spinner spinner1,spinner2,spinner3;
+    String[] jobSet={"Software Development","Data & Analytics","Cloud Computing","Quality Assurance","Project Management"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_job_filter);
 
-        spinner=findViewById(R.id.jobCategorySpinner);
+        //job category
+        spinner1=findViewById(R.id.jobCategorySpinner);
 
         ArrayAdapter<String> adpter=new ArrayAdapter<>(JobFilterActivity.this, android.R.layout.simple_spinner_item,jobSet);
         adpter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinner.setAdapter(adpter);
+        spinner1.setAdapter(adpter);
 
-        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        spinner1.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String value=parent.getItemAtPosition(position).toString();
@@ -35,7 +36,12 @@ public class JobFilterActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
+
         });
+
+        //sub category
+        spinner2=findViewById(R.id.subCategorySpinner);
+
 
     }
 }
